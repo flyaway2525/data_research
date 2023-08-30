@@ -1,23 +1,23 @@
 @echo off
 setlocal enabledelayedexpansion
 
-:: CSVファイルのヘッダーを初期化
-set "header=タイトル"
+:: Initialize CSV file header
+set "header=title"
 
-:: Grep対象のキーワードを読み込む
+:: Load the keyword to grep
 for /f %%a in (grep_list.txt) do (
     set "header=!header!,%%a"
 )
 
-:: ヘッダーをCSVに書き込む
+:: Write header to CSV
 echo !header! > csvtest.csv
 
-:: ファイルリストを処理
+:: Process file list
 for /f "tokens=*" %%f in (file_list.txt) do (
     set "line=%%f"
     set "result=%%f"
     
-    :: 各Grep対象で検索
+    :: Search for each Grep target
     for /f %%a in (grep_list.txt) do (
         findstr /m /c:"%%a" "%%f" > nul
         if errorlevel 1 (
