@@ -1,3 +1,0 @@
-grep_caseA
-grep_caseB
-grep_caseC
