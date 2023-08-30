@@ -1,0 +1,4 @@
+.\folderA\sampleA.txt
+.\folderA\sampleB.txt
+.\folderB\sampleC.txt
+.\sampleD.txt
