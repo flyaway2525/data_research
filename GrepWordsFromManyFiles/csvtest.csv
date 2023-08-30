@@ -1,4 +1,4 @@
-タイトル,grep_caseA,grep_caseB,grep_caseC 
+title,grep_caseA,grep_caseB,grep_caseC 
 .\folderA\sampleA.txt,TRUE,TRUE,TRUE 
 .\folderA\sampleB.txt,TRUE,TRUE,FALSE 
 .\folderB\sampleC.txt,TRUE,FALSE,TRUE 
