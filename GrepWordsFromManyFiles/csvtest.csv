@@ -1,5 +1,5 @@
 title,grep_caseA,grep_caseB,grep_caseC 
-.\folderA\sampleA.txt,TRUE,TRUE,TRUE 
-.\folderA\sampleB.txt,TRUE,TRUE,FALSE 
-.\folderB\sampleC.txt,TRUE,FALSE,TRUE 
-.\sampleD.txt,FALSE,TRUE,TRUE 
+.\folderA\sampleA.txt,1,1,1 
+.\folderA\sampleB.txt,1,1, 
+.\folderB\sampleC.txt,1,,1 
+.\sampleD.txt,,1,1 
