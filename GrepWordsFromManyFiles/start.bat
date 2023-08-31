@@ -38,7 +38,7 @@ if /i "%check%"=="Y" (
     :: Check if header character count exceeds the limit
     set count=0
     :loopHeader
-    if defined header (
+    if defined headerCheck (
         set "char=!header:~0,1!"
         set "header=!header:~1!"
         set /a count+=1
